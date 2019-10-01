@@ -2,18 +2,15 @@
 
 // 1.引数に数値を指定して実行すると、数値を2倍にして返す関数を作成してください//
 function double($max){
-  $result = 0;$result += $max * 2; 
-  return $result;
-  
+  return $max * 2;
 }
  echo double(4) . "\n";
  
  //2.$a と $b を仮引数に持ち、　$a と $b　を足した結果を返す関数を作成してください。//
- function f($a, $b) {
-   $sum = $a + $b;return $sum;
-   
- }
- $result=f(3,2);
+function f($a, $b) {
+ return $a + $b;
+}
+ $result = f(3,2);
  echo $result . "\n";
  
 // 3.$arr という配列の仮引数を持ち、数値が入った配列array(1, 3, 5 ,7, 9) を渡すとその要素をすべてかけた結果を返す関数を作成してください。/
@@ -40,4 +37,7 @@ function max_array($arr){
   }
   return $max_number;
 }
+
+$result = max_array(array(1,3,5,7,9));
+echo $result;
 
